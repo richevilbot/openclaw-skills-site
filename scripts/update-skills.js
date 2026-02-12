@@ -5,6 +5,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const skillsRoot = process.env.OPENCLAW_SKILLS_DIR || '/usr/lib/node_modules/openclaw/skills';
 const outPath = path.join(root, 'web', 'skills.json');
+const docsOutPath = path.join(root, 'docs', 'skills.json');
 
 function readDescription(skillDir) {
   const skillMdPath = path.join(skillDir, 'SKILL.md');
@@ -54,9 +55,16 @@ function collectSkills() {
 
 function main() {
   const payload = collectSkills();
+  const body = JSON.stringify(payload, null, 2);
+
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
+  fs.writeFileSync(outPath, body);
   console.log(`Updated ${outPath} with ${payload.count} skills from ${payload.sourceDir}`);
+
+  // Keep GitHub Pages docs/ in sync when present.
+  fs.mkdirSync(path.dirname(docsOutPath), { recursive: true });
+  fs.writeFileSync(docsOutPath, body);
+  console.log(`Updated ${docsOutPath}`);
 }
 
 main();

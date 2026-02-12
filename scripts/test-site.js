@@ -8,6 +8,10 @@ const requiredFiles = [
   'web/styles.css',
   'web/app.js',
   'web/skills.json',
+  'docs/index.html',
+  'docs/styles.css',
+  'docs/app.js',
+  'docs/skills.json',
   'scripts/update-skills.js'
 ];
 
