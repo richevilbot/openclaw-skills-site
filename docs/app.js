@@ -7,6 +7,10 @@ const avgQualityEl = document.getElementById('avgQuality');
 const avgSecurityEl = document.getElementById('avgSecurity');
 const refreshBtn = document.getElementById('refreshBtn');
 
+const communityStatusEl = document.getElementById('communityStatus');
+const communityCountEl = document.getElementById('communityCount');
+const communityListEl = document.getElementById('communityList');
+
 let state = { skills: [], summary: {} };
 
 function badgeClass(score) {
@@ -47,6 +51,48 @@ function render(skills) {
   }
 }
 
+function renderCommunity(items) {
+  if (!communityListEl) return;
+  if (!items?.length) {
+    communityListEl.innerHTML = '<li class="muted">No community skills preview available yet. Open ClawHub for full catalog.</li>';
+    return;
+  }
+
+  communityListEl.innerHTML = items.slice(0, 8).map((item) => {
+    const name = item.name || item.title || 'Unnamed skill';
+    const desc = item.description || item.summary || '';
+    const url = item.url || item.link || 'https://clawhub.ai';
+    return `<li><a href="${url}" target="_blank" rel="noopener">${name}</a>${desc ? ` — ${desc}` : ''}</li>`;
+  }).join('');
+}
+
+async function loadCommunity() {
+  if (!communityStatusEl) return;
+
+  const candidates = [
+    'https://clawhub.ai/skills.json',
+    'https://clawhub.ai/api/skills.json',
+    'https://clawhub.ai/community-skills.json'
+  ];
+
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) continue;
+      const data = await res.json();
+      const items = Array.isArray(data) ? data : (data.skills || data.items || []);
+      communityStatusEl.textContent = `Community source: ${url}`;
+      communityCountEl.textContent = `Community skills: ${items.length}`;
+      renderCommunity(items);
+      return;
+    } catch (_) {}
+  }
+
+  communityStatusEl.textContent = 'Community source: clawhub.ai (directory link mode)';
+  communityCountEl.textContent = 'Community skills: external catalog';
+  renderCommunity([]);
+}
+
 function applyFilter() {
   const q = searchEl.value.trim().toLowerCase();
   if (!q) return render(state.skills);
@@ -72,6 +118,7 @@ async function load() {
   avgQualityEl.textContent = `Avg quality: ${data.summary?.avgQuality ?? '-'}`;
   avgSecurityEl.textContent = `Avg security: ${data.summary?.avgSecurity ?? '-'}`;
   render(state.skills || []);
+  await loadCommunity();
 }
 
 searchEl.addEventListener('input', applyFilter);
