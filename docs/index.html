@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenClaw Skills Overview</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>OpenClaw Skills Overview</h1>
+      <p>Auto-generated catalog of available skills + quick update workflow.</p>
+      <div class="meta">
+        <span id="generatedAt">Generated: -</span>
+        <span id="count">Skills: -</span>
+      </div>
+    </header>
+
+    <section class="controls">
+      <input id="search" type="search" placeholder="Search skills..." />
+      <button id="refreshBtn">Reload Data</button>
+    </section>
+
+    <section>
+      <ul id="skillsList" class="skills"></ul>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
