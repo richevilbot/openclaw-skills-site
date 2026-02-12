@@ -20,12 +20,8 @@ body {
 }
 .hero h1 { margin: 0 0 6px; }
 .hero p { margin: 0 0 10px; color: var(--muted); }
-.meta { display: flex; gap: 14px; color: var(--muted); font-size: .9rem; }
-.controls {
-  display: flex;
-  gap: 10px;
-  margin: 20px 0;
-}
+.meta { display: flex; gap: 14px; color: var(--muted); font-size: .9rem; flex-wrap: wrap; }
+.controls { display: flex; gap: 10px; margin: 20px 0; }
 input, button {
   border-radius: 10px;
   border: 1px solid var(--line);
@@ -35,20 +31,27 @@ input, button {
 }
 input { flex: 1; }
 button { cursor: pointer; }
-.skills {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 12px;
-}
+.skills { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
 .card {
   border: 1px solid var(--line);
   background: linear-gradient(180deg, #131b38 0%, #10162f 100%);
   border-radius: 12px;
   padding: 14px;
 }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .card h3 { margin: 0 0 6px; }
 .desc { color: var(--muted); margin: 0 0 10px; }
 .path { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--accent); font-size: .84rem; word-break: break-all; }
 .badge { display: inline-block; margin-top: 8px; font-size: .75rem; border: 1px solid var(--line); padding: 4px 8px; border-radius: 999px; color: var(--muted); }
+.score-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+.score { border-radius: 999px; padding: 4px 8px; font-size: .78rem; border: 1px solid var(--line); }
+.great { background: #0f5132; }
+.good { background: #1e7e34; }
+.fair { background: #7a6410; }
+.bad { background: #6b1a1a; }
+.pill { border-radius: 999px; padding: 4px 8px; font-size: .75rem; border: 1px solid var(--line); }
+.pill.low { background: #0f5132; }
+.pill.medium { background: #7a6410; }
+.pill.high { background: #6b1a1a; }
+.section { margin-top: 8px; color: var(--muted); font-size: .9rem; }
+.section ul { margin: 6px 0 0 18px; }
