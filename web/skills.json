@@ -1,0 +1,319 @@
+{
+  "generatedAt": "2026-02-12T20:21:30.419Z",
+  "sourceDir": "/usr/lib/node_modules/openclaw/skills",
+  "count": 52,
+  "skills": [
+    {
+      "name": "1password",
+      "location": "/usr/lib/node_modules/openclaw/skills/1password",
+      "description": "description: Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "apple-notes",
+      "location": "/usr/lib/node_modules/openclaw/skills/apple-notes",
+      "description": "description: Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks OpenClaw to add a note, list notes, search notes, or manage note folders.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "apple-reminders",
+      "location": "/usr/lib/node_modules/openclaw/skills/apple-reminders",
+      "description": "name: apple-reminders",
+      "hasSkillFile": true
+    },
+    {
+      "name": "bear-notes",
+      "location": "/usr/lib/node_modules/openclaw/skills/bear-notes",
+      "description": "description: Create, search, and manage Bear notes via grizzly CLI.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "blogwatcher",
+      "location": "/usr/lib/node_modules/openclaw/skills/blogwatcher",
+      "description": "description: Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "blucli",
+      "location": "/usr/lib/node_modules/openclaw/skills/blucli",
+      "description": "description: BluOS CLI (blu) for discovery, playback, grouping, and volume.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "bluebubbles",
+      "location": "/usr/lib/node_modules/openclaw/skills/bluebubbles",
+      "description": "description: Use when you need to send or manage iMessages via BlueBubbles (recommended iMessage integration). Calls go through the generic message tool with channel=\"bluebubbles\".",
+      "hasSkillFile": true
+    },
+    {
+      "name": "camsnap",
+      "location": "/usr/lib/node_modules/openclaw/skills/camsnap",
+      "description": "description: Capture frames or clips from RTSP/ONVIF cameras.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "canvas",
+      "location": "/usr/lib/node_modules/openclaw/skills/canvas",
+      "description": "Display HTML content on connected OpenClaw nodes (Mac app, iOS, Android).",
+      "hasSkillFile": true
+    },
+    {
+      "name": "clawhub",
+      "location": "/usr/lib/node_modules/openclaw/skills/clawhub",
+      "description": "description: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "coding-agent",
+      "location": "/usr/lib/node_modules/openclaw/skills/coding-agent",
+      "description": "description: Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "discord",
+      "location": "/usr/lib/node_modules/openclaw/skills/discord",
+      "description": "description: Use when you need to control Discord from OpenClaw via the discord tool: send messages, react, post or upload stickers, upload emojis, run polls, manage threads/pins/search, create/edit/delete channels and categories, fetch permissions or member/role/channel info, set bot presence/activity, or handle moderation actions in Discord DMs or channels.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "eightctl",
+      "location": "/usr/lib/node_modules/openclaw/skills/eightctl",
+      "description": "description: Control Eight Sleep pods (status, temperature, alarms, schedules).",
+      "hasSkillFile": true
+    },
+    {
+      "name": "food-order",
+      "location": "/usr/lib/node_modules/openclaw/skills/food-order",
+      "description": "description: Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order food, reorder, track ETA.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "gemini",
+      "location": "/usr/lib/node_modules/openclaw/skills/gemini",
+      "description": "description: Gemini CLI for one-shot Q&A, summaries, and generation.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "gifgrep",
+      "location": "/usr/lib/node_modules/openclaw/skills/gifgrep",
+      "description": "description: Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "github",
+      "location": "/usr/lib/node_modules/openclaw/skills/github",
+      "description": "description: \"Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.\"",
+      "hasSkillFile": true
+    },
+    {
+      "name": "gog",
+      "location": "/usr/lib/node_modules/openclaw/skills/gog",
+      "description": "description: Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "goplaces",
+      "location": "/usr/lib/node_modules/openclaw/skills/goplaces",
+      "description": "description: Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "healthcheck",
+      "location": "/usr/lib/node_modules/openclaw/skills/healthcheck",
+      "description": "description: Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+      "hasSkillFile": true
+    },
+    {
+      "name": "himalaya",
+      "location": "/usr/lib/node_modules/openclaw/skills/himalaya",
+      "description": "description: \"CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).\"",
+      "hasSkillFile": true
+    },
+    {
+      "name": "imsg",
+      "location": "/usr/lib/node_modules/openclaw/skills/imsg",
+      "description": "description: iMessage/SMS CLI for listing chats, history, watch, and sending.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "local-places",
+      "location": "/usr/lib/node_modules/openclaw/skills/local-places",
+      "description": "description: Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "mcporter",
+      "location": "/usr/lib/node_modules/openclaw/skills/mcporter",
+      "description": "description: Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "model-usage",
+      "location": "/usr/lib/node_modules/openclaw/skills/model-usage",
+      "description": "description: Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "nano-banana-pro",
+      "location": "/usr/lib/node_modules/openclaw/skills/nano-banana-pro",
+      "description": "name: nano-banana-pro",
+      "hasSkillFile": true
+    },
+    {
+      "name": "nano-pdf",
+      "location": "/usr/lib/node_modules/openclaw/skills/nano-pdf",
+      "description": "description: Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "notion",
+      "location": "/usr/lib/node_modules/openclaw/skills/notion",
+      "description": "description: Notion API for creating and managing pages, databases, and blocks.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "obsidian",
+      "location": "/usr/lib/node_modules/openclaw/skills/obsidian",
+      "description": "description: Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "openai-image-gen",
+      "location": "/usr/lib/node_modules/openclaw/skills/openai-image-gen",
+      "description": "name: openai-image-gen",
+      "hasSkillFile": true
+    },
+    {
+      "name": "openai-whisper",
+      "location": "/usr/lib/node_modules/openclaw/skills/openai-whisper",
+      "description": "description: Local speech-to-text with the Whisper CLI (no API key).",
+      "hasSkillFile": true
+    },
+    {
+      "name": "openai-whisper-api",
+      "location": "/usr/lib/node_modules/openclaw/skills/openai-whisper-api",
+      "description": "name: openai-whisper-api",
+      "hasSkillFile": true
+    },
+    {
+      "name": "openhue",
+      "location": "/usr/lib/node_modules/openclaw/skills/openhue",
+      "description": "description: Control Philips Hue lights/scenes via the OpenHue CLI.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "oracle",
+      "location": "/usr/lib/node_modules/openclaw/skills/oracle",
+      "description": "description: Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).",
+      "hasSkillFile": true
+    },
+    {
+      "name": "ordercli",
+      "location": "/usr/lib/node_modules/openclaw/skills/ordercli",
+      "description": "description: Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
+      "hasSkillFile": true
+    },
+    {
+      "name": "peekaboo",
+      "location": "/usr/lib/node_modules/openclaw/skills/peekaboo",
+      "description": "description: Capture and automate macOS UI with the Peekaboo CLI.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "sag",
+      "location": "/usr/lib/node_modules/openclaw/skills/sag",
+      "description": "description: ElevenLabs text-to-speech with mac-style say UX.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "session-logs",
+      "location": "/usr/lib/node_modules/openclaw/skills/session-logs",
+      "description": "description: Search and analyze your own session logs (older/parent conversations) using jq.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "sherpa-onnx-tts",
+      "location": "/usr/lib/node_modules/openclaw/skills/sherpa-onnx-tts",
+      "description": "name: sherpa-onnx-tts",
+      "hasSkillFile": true
+    },
+    {
+      "name": "skill-creator",
+      "location": "/usr/lib/node_modules/openclaw/skills/skill-creator",
+      "description": "description: Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "slack",
+      "location": "/usr/lib/node_modules/openclaw/skills/slack",
+      "description": "description: Use when you need to control Slack from OpenClaw via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "songsee",
+      "location": "/usr/lib/node_modules/openclaw/skills/songsee",
+      "description": "description: Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "sonoscli",
+      "location": "/usr/lib/node_modules/openclaw/skills/sonoscli",
+      "description": "description: Control Sonos speakers (discover/status/play/volume/group).",
+      "hasSkillFile": true
+    },
+    {
+      "name": "spotify-player",
+      "location": "/usr/lib/node_modules/openclaw/skills/spotify-player",
+      "description": "description: Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "summarize",
+      "location": "/usr/lib/node_modules/openclaw/skills/summarize",
+      "description": "description: Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).",
+      "hasSkillFile": true
+    },
+    {
+      "name": "things-mac",
+      "location": "/usr/lib/node_modules/openclaw/skills/things-mac",
+      "description": "description: Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks OpenClaw to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "tmux",
+      "location": "/usr/lib/node_modules/openclaw/skills/tmux",
+      "description": "description: Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "trello",
+      "location": "/usr/lib/node_modules/openclaw/skills/trello",
+      "description": "description: Manage Trello boards, lists, and cards via the Trello REST API.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "video-frames",
+      "location": "/usr/lib/node_modules/openclaw/skills/video-frames",
+      "description": "description: Extract frames or short clips from videos using ffmpeg.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "voice-call",
+      "location": "/usr/lib/node_modules/openclaw/skills/voice-call",
+      "description": "description: Start voice calls via the OpenClaw voice-call plugin.",
+      "hasSkillFile": true
+    },
+    {
+      "name": "wacli",
+      "location": "/usr/lib/node_modules/openclaw/skills/wacli",
+      "description": "description: Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
+      "hasSkillFile": true
+    },
+    {
+      "name": "weather",
+      "location": "/usr/lib/node_modules/openclaw/skills/weather",
+      "description": "description: Get current weather and forecasts (no API key required).",
+      "hasSkillFile": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "openclaw-skills-site",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Static website with OpenClaw available skills overview",
+  "scripts": {
+    "update:skills": "node scripts/update-skills.js",
+    "build": "npm run update:skills",
+    "test": "node scripts/test-site.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
